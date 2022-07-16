@@ -44,10 +44,9 @@
     align-items: center;
     cursor: pointer;
     padding: 0;
-}
-
-.modal-close-btn:hover {
-    fill: var(--title-text-color);
+    &:hover {
+        fill: var(--title-text-color);
+    }
 }
 
 .modal-title {
@@ -101,15 +100,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.label-input:hover,
-.label-input:focus {
-    border-color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        border-color: var(--title-text-color);
+    }
 }
 
 .label-input:hover+.form-icon,
@@ -137,10 +134,13 @@
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
-}
-
-.label-textarea:focus-within {
-    border-color: var(--title-text-color);
+    &:focus-within {
+        border-color: var(--title-text-color);
+    }
+    &:hover,
+    &:focus {
+        border-color: var(--title-text-color);
+    }
 }
 
 .label-textarea::placeholder {
@@ -149,11 +149,6 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-}
-
-.label-textarea:hover,
-.label-textarea:focus {
-    border-color: var(--title-text-color);
 }
 
 .form-field.checkbox-field {
@@ -173,7 +168,6 @@
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -235,12 +229,10 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
     background: var(--title-text-color);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -248,11 +240,10 @@
     color: #FFFFFF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-}
-
-.modal-form-button:hover,
-.modal-form-button:focus {
-    background: #188CE8;
+    &:hover,
+    &:focus {
+        background: #188CE8;
+    }
 }
 
 .modal-form-icon {

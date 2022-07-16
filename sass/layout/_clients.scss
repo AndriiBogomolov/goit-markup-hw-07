@@ -6,6 +6,9 @@
 .clients-list {
     display: flex;
     margin: 0 auto;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .clients-link {
@@ -19,20 +22,15 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--svg-color);
-}
-
-.clients-list:last-child {
-    margin-right: 0;
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+        border-color: var(--title-text-color);
+    }
 }
 
 .clients-icon {
     fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--title-text-color);
-    border-color: var(--title-text-color);
 }
 
 .clients-item {

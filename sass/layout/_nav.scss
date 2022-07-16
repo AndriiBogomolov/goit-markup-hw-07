@@ -24,26 +24,15 @@ ul {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+    }
 }
 
 .nav-portfolio,
 .nav-contact {
     color: var(--accent-color);
-}
-
-.nav-studio:hover,
-.nav-studio:focus {
-    color: var(--title-text-color);
-}
-
-.nav-portfolio:hover,
-.nav-portfolio:focus {
-    color: var(--title-text-color);
-}
-
-.nav-contact:hover,
-.nav-contact:focus {
-    color: var(--title-text-color);
 }
 
 .current::after {

@@ -17,6 +17,10 @@
     background-color: var(--fill-color);
     border-radius: 4px;
     border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
 }
 
 .all-web {
@@ -33,6 +37,10 @@
     border-radius: 4px;
     margin-left: 8px;
     border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
 }
 
 .apps {
@@ -49,6 +57,10 @@
     border-radius: 4px;
     margin-left: 8px;
     border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
 }
 
 .design {
@@ -65,6 +77,10 @@
     border-radius: 4px;
     margin-left: 8px;
     border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
 }
 
 .marketing {
@@ -81,31 +97,10 @@
     border-radius: 4px;
     margin-left: 8px;
     border: 1px solid transparent;
-}
-
-.button-all:hover,
-.button-all:focus {
-    background-color: var(--title-text-color);
-}
-
-.all-web:hover,
-.all-web:focus {
-    background-color: var(--title-text-color);
-}
-
-.apps:hover,
-.apps:focus {
-    background-color: var(--title-text-color);
-}
-
-.design:hover,
-.design:focus {
-    background-color: var(--title-text-color);
-}
-
-.marketing:hover,
-.marketing:focus {
-    background-color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
 }
 
 .button:hover,

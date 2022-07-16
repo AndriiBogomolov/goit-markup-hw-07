@@ -3,13 +3,12 @@
     margin-left: auto;
 }
 
-.contact-list .contact-item+.contact-item {
+.contact-list .contact-item + .contact-item {
     margin-left: 50px;
 }
 
 .contact-item {
     box-sizing: border-box;
-
 }
 
 .contact-icon {
@@ -19,11 +18,10 @@
     margin-right: 10px;
     fill: currentColor;
     align-items: center;
-}
-
-.contact-icon:hover,
-.contact-icon:focus {
-    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+    }
 }
 
 .mail,
@@ -39,14 +37,8 @@
     color: var(--primery-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.mail:hover,
-.mail:focus {
-    color: var(--title-text-color);
-}
-
-.tel:hover,
-.tel:focus {
-    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+    }
 }

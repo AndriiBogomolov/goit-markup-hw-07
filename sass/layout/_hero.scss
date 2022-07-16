@@ -19,7 +19,6 @@
 
 .hero-btn {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     display: block;
     background-color: var(--title-text-color);
     font-family: inherit;
@@ -38,13 +37,12 @@
     height: 50px;
     align-items: center;
     color: var(--white-color);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #188CE8;
-    color: var(--white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        color: var(--white-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .overlay {

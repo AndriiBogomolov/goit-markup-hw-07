@@ -9,10 +9,9 @@
 
 .header-item {
     margin-right: 50px;
-}
-
-.header-item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .main {

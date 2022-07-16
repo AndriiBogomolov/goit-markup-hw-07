@@ -9,10 +9,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-right: var(--typical-gap);
-}
-
-.team-item:nth-child(4n) {
-    margin-right: 0;
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
 }
 
 .our-team,
@@ -82,10 +81,9 @@
 
 .masters-social-item {
     margin-left: 10px;
-}
-
-.masters-social-item:first-child {
-    margin-left: 0;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 .masters-social-link {
@@ -99,14 +97,14 @@
     border-radius: 50%;
     background-color: var(--white-color);
     color: var(--svg-color);
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+        color: var(--white-color);
+    }
 }
 
 .masters-social-icon {
     fill: currentColor;
 }
 
-.masters-social-link:hover,
-.masters-social-link:focus {
-    background-color: var(--title-text-color);
-    color: var(--white-color);
-}
