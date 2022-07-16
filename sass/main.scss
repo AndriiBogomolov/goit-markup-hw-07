@@ -1,0 +1,23 @@
+@import './base/reset';
+@import './components.scss/container';
+@import './utils/variables';
+@import './utils/hidden';
+@import './base/sections';
+
+@import './layout/header';
+@import './layout/logo';
+@import './layout/nav';
+@import './layout/email-tel';
+
+@import './layout/hero';
+
+@import './layout/portfolio-main-content';
+@import './layout/portfolio-buttons';
+@import './layout/portfolio-cards';
+@import './layout/section-features';
+@import './layout/section-to-do';
+@import './layout/section-team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/modal';
+

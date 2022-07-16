@@ -1,0 +1,59 @@
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-studio,
+.nav-portfolio,
+.nav-contact {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-portfolio,
+.nav-contact {
+    color: var(--accent-color);
+}
+
+.nav-studio:hover,
+.nav-studio:focus {
+    color: var(--title-text-color);
+}
+
+.nav-portfolio:hover,
+.nav-portfolio:focus {
+    color: var(--title-text-color);
+}
+
+.nav-contact:hover,
+.nav-contact:focus {
+    color: var(--title-text-color);
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: var(--title-text-color);
+    bottom: -1px;
+    width: 100%;
+    border-radius: 2px;
+    right: 0;
+
+}

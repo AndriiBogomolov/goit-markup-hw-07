@@ -1,0 +1,112 @@
+.team-members {
+    display: flex;
+}
+
+.team-item {
+    flex-direction: column;
+    align-items: center;
+    background: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: var(--typical-gap);
+}
+
+.team-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.our-team,
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.main-work {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.section-button,
+.footer-address {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.section-our-team {
+    padding-top: var(--next-typical-gap);
+    padding-bottom: var(--next-typical-gap);
+    background-color: var(--fill-color);
+}
+
+.card-name {
+    padding-top: var(--typical-gap);
+    padding-bottom: var(--typical-gap);
+}
+
+.masters-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters-social-item {
+    margin-left: 10px;
+}
+
+.masters-social-item:first-child {
+    margin-left: 0;
+}
+
+.masters-social-link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--svg-color);
+}
+
+.masters-social-icon {
+    fill: currentColor;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+    background-color: var(--title-text-color);
+    color: var(--white-color);
+}
