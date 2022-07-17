@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.team-item {
+.team-list__item {
     flex-direction: column;
     align-items: center;
     background: var(--white-color);
@@ -14,17 +14,17 @@
     }
 }
 
-.our-team,
-.clients-title {
+.our-team {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     text-align: center;
+    color: var(--accent-color);
 }
 
-.section-name {
+.card-name__pre-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -32,6 +32,7 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+    color: var(--accent-color);
 }
 
 .main-title {
@@ -48,19 +49,13 @@
     letter-spacing: 0.03em;
 }
 
-.position {
+.card-name__post-text {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0px;
     margin-bottom: 16px;
-}
-
-.section-button,
-.footer-address {
-    color: var(--white-color);
-    cursor: pointer;
 }
 
 .section-our-team {
@@ -74,19 +69,19 @@
     padding-bottom: var(--typical-gap);
 }
 
-.masters-social-list {
+.soc {
     display: flex;
     justify-content: center;
 }
 
-.masters-social-item {
+.soc__item {
     margin-left: 10px;
     &:first-child {
         margin-left: 0;
     }
 }
 
-.masters-social-link {
+.soc-link {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
@@ -104,7 +99,7 @@
     }
 }
 
-.masters-social-icon {
+.soc__icon {
     fill: currentColor;
 }
 

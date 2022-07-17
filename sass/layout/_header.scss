@@ -7,7 +7,7 @@
     letter-spacing: 0.02em;
 }
 
-.header-item {
+.header__item {
     margin-right: 50px;
     &:last-child {
         margin-right: 0;
@@ -23,11 +23,6 @@
 }
 
 .header .container {
-    display: flex;
-    align-items: center;
-}
-
-.header-nav {
     display: flex;
     align-items: center;
 }

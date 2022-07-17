@@ -54,19 +54,6 @@ li {
   overflow: hidden;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.section-benefits,
-.section-to-do,
-.our-team,
-.section-name {
-  color: var(--accent-color);
-}
-
 .header-list {
   display: block;
   color: var(--accent-color);
@@ -76,10 +63,10 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-item {
+.header__item {
   margin-right: 50px;
 }
-.header-item:last-child {
+.header__item:last-child {
   margin-right: 0;
 }
 
@@ -92,15 +79,6 @@ img {
 }
 
 .header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,8 +117,7 @@ img {
   margin-right: 93px;
 }
 
-.accent1,
-.clients-title {
+.accent1 {
   color: var(--accent-color);
 }
 
@@ -152,7 +129,7 @@ ul {
   text-decoration: none;
 }
 
-.main-nav {
+.main-nav .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,9 +138,9 @@ ul {
           align-items: center;
 }
 
-.nav-studio,
-.nav-portfolio,
-.nav-contact {
+.nav__studio,
+.nav__portfolio,
+.nav__contact {
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -176,16 +153,16 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-studio:hover, .nav-studio:focus,
-.nav-portfolio:hover,
-.nav-portfolio:focus,
-.nav-contact:hover,
-.nav-contact:focus {
+.nav__studio:hover, .nav__studio:focus,
+.nav__portfolio:hover,
+.nav__portfolio:focus,
+.nav__contact:hover,
+.nav__contact:focus {
   color: var(--title-text-color);
 }
 
-.nav-portfolio,
-.nav-contact {
+.nav__portfolio,
+.nav__contact {
   color: var(--accent-color);
 }
 
@@ -207,11 +184,11 @@ ul {
   margin-left: auto;
 }
 
-.contact-list .contact-item + .contact-item {
+.contact-list .contact__item + .contact__item {
   margin-left: 50px;
 }
 
-.contact-item {
+.contact__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -233,8 +210,8 @@ ul {
   color: var(--title-text-color);
 }
 
-.mail,
-.tel {
+.contact-mail__link,
+.contact-tel__link {
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -252,9 +229,9 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.mail:hover, .mail:focus,
-.tel:hover,
-.tel:focus {
+.contact-mail__link:hover, .contact-mail__link:focus,
+.contact-tel__link:hover,
+.contact-tel__link:focus {
   color: var(--title-text-color);
 }
 
@@ -277,7 +254,7 @@ ul {
   width: 696px;
 }
 
-.hero-btn {
+.hero-title__button {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -304,7 +281,7 @@ ul {
           align-items: center;
   color: var(--white-color);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero-title__button:hover, .hero-title__button:focus {
   background-color: #188CE8;
   color: var(--white-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -322,6 +299,11 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.section-button {
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 .main-content {
@@ -530,43 +512,44 @@ ul {
   margin: 0 auto;
 }
 
-.section-feature-icon {
+.feature__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section-list {
+.features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section-benefits {
+.feature__benefits {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: var(--accent-color);
 }
 
-.section-text {
+.feature__text {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.section-item {
+.feature__item {
   margin-right: var(--typical-gap);
 }
 
-.section-item:nth-child(4n) {
+.feature__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.section-item:nth-last-child(-n+4) {
+.feature__item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
 
@@ -608,17 +591,23 @@ ul {
   margin-left: -30px;
 }
 
-.to-do-img {
+.to-do__item {
   -ms-flex-preferred-size: calc(33.3333333333% - var(--typical-gap));
       flex-basis: calc(33.3333333333% - var(--typical-gap));
   margin-left: var(--typical-gap);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .thumb-to-do {
   position: relative;
 }
 
-.description-to-do {
+.to-do-item__text {
   bottom: 0;
   width: 100%;
   position: absolute;
@@ -641,7 +630,7 @@ ul {
   display: flex;
 }
 
-.team-item {
+.team-list__item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -655,21 +644,21 @@ ul {
   border-radius: 0px 0px 4px 4px;
   margin-right: var(--typical-gap);
 }
-.team-item:nth-child(4n) {
+.team-list__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.our-team,
-.clients-title {
+.our-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+  color: var(--accent-color);
 }
 
-.section-name {
+.card-name__pre-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -677,6 +666,7 @@ ul {
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+  color: var(--accent-color);
 }
 
 .main-title {
@@ -693,19 +683,13 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.position {
+.card-name__post-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0px;
   margin-bottom: 16px;
-}
-
-.section-button,
-.footer-address {
-  color: var(--white-color);
-  cursor: pointer;
 }
 
 .section-our-team {
@@ -719,7 +703,7 @@ ul {
   padding-bottom: var(--typical-gap);
 }
 
-.masters-social-list {
+.soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,14 +712,14 @@ ul {
           justify-content: center;
 }
 
-.masters-social-item {
+.soc__item {
   margin-left: 10px;
 }
-.masters-social-item:first-child {
+.soc__item:first-child {
   margin-left: 0;
 }
 
-.masters-social-link {
+.soc-link {
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -754,18 +738,28 @@ ul {
   background-color: var(--white-color);
   color: var(--svg-color);
 }
-.masters-social-link:hover, .masters-social-link:focus {
+.soc-link:hover, .soc-link:focus {
   background-color: var(--title-text-color);
   color: var(--white-color);
 }
 
-.masters-social-icon {
+.soc__icon {
   fill: currentColor;
 }
 
 .clients {
   padding-top: var(--next-typical-gap);
   padding-bottom: var(--next-typical-gap);
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--accent-color);
 }
 
 .clients-list {
@@ -778,7 +772,7 @@ ul {
   margin-right: 0;
 }
 
-.clients-link {
+.clients-list__link {
   position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -797,17 +791,21 @@ ul {
   border-radius: 4px;
   color: var(--svg-color);
 }
-.clients-link:hover, .clients-link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   color: var(--title-text-color);
   border-color: var(--title-text-color);
 }
 
-.clients-icon {
+.clients-list__icon {
   fill: currentColor;
 }
 
-.clients-item {
+.clients-list__item {
   margin-right: 30px;
+}
+
+.clients-title {
+  color: var(--accent-color);
 }
 
 .footer {
@@ -880,6 +878,11 @@ ul {
   border: none;
   min-width: 206px;
   display: block;
+}
+
+.footer-address {
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 .footer-social-list {

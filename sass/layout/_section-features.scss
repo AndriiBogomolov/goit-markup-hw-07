@@ -5,39 +5,40 @@
     margin: 0 auto;
 }
 
-.section-feature-icon {
+.feature__icon {
     display: flex;
 }
 
-.section-list {
+.features {
     display: flex;
 }
 
-.section-benefits {
+.feature__benefits {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: var(--accent-color);
 }
 
-.section-text {
+.feature__text {
     width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.section-item {
+.feature__item {
     margin-right: var(--typical-gap);
 }
 
-.section-item:nth-child(4n) {
+.feature__item:nth-child(4n) {
     margin-right: 0;
 }
 
-.section-item:nth-last-child(-n+4) {
+.feature__item:nth-last-child(-n+4) {
     margin-bottom: 0;
 }
 

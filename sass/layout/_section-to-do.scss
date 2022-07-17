@@ -17,16 +17,22 @@
     margin-left: -30px;
 }
 
-.to-do-img {
+.to-do__item {
     flex-basis: calc(100% / 3 - var(--typical-gap));
     margin-left: var(--typical-gap);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .thumb-to-do {
     position: relative;
 }
 
-.description-to-do {
+.to-do-item__text {
     bottom: 0;
     width: 100%;
     position: absolute;
