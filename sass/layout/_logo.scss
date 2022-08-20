@@ -1,12 +1,31 @@
 .logo-head {
-    font-family: var(--second-font);
+    color: var(--title-text-color);
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
     margin-right: 93px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    text-decoration: none;
 }
+
 
 .accent1 {
     color: var(--accent-color);

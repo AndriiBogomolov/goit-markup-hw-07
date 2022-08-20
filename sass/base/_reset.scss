@@ -1,8 +1,7 @@
 body {
-    font-family: var(--main-font);
-    letter-spacing: 0.03em;
     background-color: var(--white-color);
     color: var(--primery-text-color);
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
 
@@ -23,16 +22,16 @@ li {
     display: list-item;
 }
 
-ul {
-    list-style: none;
+textarea {
+    resize: none;
 }
 
-.link {
+a {
     text-decoration: none;
 }
 
-// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
-
-// .no-scroll {
-//     overflow: hidden;
-// }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,9 +1,3 @@
-.to-do-section {
-    @media screen and (max-width: 1200px) {
-        display: none;
-    }
-}
-
 .to-do {
     font-weight: 700;
     font-size: 36px;
@@ -16,6 +10,10 @@
 
 .to-do-section {
     padding-bottom: var(--next-typical-gap);
+    @media screen and (max-width: 1199px) {
+        display: none;
+        margin-bottom: 50px;
+    }
 }
 
 .our-work {
@@ -28,11 +26,11 @@
     margin-left: var(--typical-gap);
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
 .thumb-to-do {
     position: relative;

@@ -1,4 +1,9 @@
 .main-content {
-    padding-top: var(--next-typical-gap);
-    padding-bottom: var(--next-typical-gap);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: var(--next-typical-gap);
+        padding-bottom: var(--next-typical-gap);
+    }
 }

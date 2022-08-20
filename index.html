@@ -11,6 +11,7 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     
   </head>
 <body>
@@ -20,9 +21,9 @@
       <a href="./index.html" class="logo-head link">Web<span class="accent1">Studio</span></a>
       <nav class="nav">
         <ul class="header-list">
-          <li class="header__item"><a href="./index.html" class="nav__studio current link">Студія</a></li>
-          <li class="header__item"><a href="./portfolio.html" class="nav__portfolio link">Портфоліо</a></li>
-          <li class="header__item"><a href="" class="nav__contact link">Контакти</a></li>
+          <li class="header__item"><a href="./index.html" class="header__link nav__studio current link">Студия</a></li>
+          <li class="header__item"><a href="./portfolio.html" class="header__link nav__portfolio link">Портфолио</a></li>
+          <li class="header__item"><a href="" class="header__link nav__contact link">Контакты</a></li>
         </ul>
       </nav>
       <div class="header-connect">
@@ -51,14 +52,14 @@
     <!-- Hero -->
     <section class="hero overlay">
       <div class="container">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="section-button hero-title__button" data-modal-open>Замовити послугу</button>
+        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="section-button hero-title__button" data-modal-open>Заказать услугу</button>
       </div>
-    </section> 
+    </section>
     <!-- Section-1 -->
     <section class="section-features">
       <div class="container">
-        <h2 class="visually-hidden">Наши преимущества</h2>
+        <h2 class="element-hidden">Наши преимущества</h2>
         <ul class="features">
           <li class="feature__item">
             <div class="thumb">
@@ -66,8 +67,8 @@
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
             </div>
-            <h3 class="feature__benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="feature__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            <h3 class="feature__benefits">Внимание к деталям</h3>
+            <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li class="feature__item">
             <div class="thumb">
@@ -75,8 +76,8 @@
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
             </div>
-            <h3 class="feature__benefits">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="feature__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <h3 class="feature__benefits">Пунктуальность</h3>
+            <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
           <li class="feature__item">
             <div class="thumb">
@@ -84,8 +85,8 @@
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
             </div>
-            <h3 class="feature__benefits">ПЛАНУВАННЯ</h3>
-            <p class="feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+            <h3 class="feature__benefits">Планирование</h3>
+            <p class="feature__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
           <li class="feature__item">
             <div class="thumb">
@@ -93,8 +94,8 @@
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
             </div>
-            <h3 class="feature__benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="feature__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <h3 class="feature__benefits">Современные технологии</h3>
+            <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </div>
@@ -103,24 +104,24 @@
     <!-- Section-2 -->
     <section class="to-do-section">
       <div class="container">
-        <h2 class="to-do">Чим ми займаємося</h2>
+        <h2 class="to-do">Чем мы занимаемся</h2>
         <ul class="our-work">
           <li class="to-do__item">
             <div class="thumb-to-do">
               <img class="img" src="./images/our-business/box1.jpg" alt="програмирование" width="370" height="294"/>
-              <p class="to-do-item__text">Десктопні додатки</p>
+              <p class="to-do-item__text">Десктопные приложения</p>
             </div>
           </li>
           <li class="to-do__item">
             <div class="thumb-to-do">
               <img class="img" src="./images/our-business/box2.jpg" alt="дизайн" width="370" height="294"/>
-              <p class="to-do-item__text">Мобільні додатки</p>
+              <p class="to-do-item__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="to-do__item">
             <div class="thumb-to-do">
               <img class="img" src="./images/our-business/box3.jpg" alt="подбор цветов" width="370" height="294"/>
-              <p class="to-do-item__text">Дизайнерські рішення</p>
+              <p class="to-do-item__text">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -136,7 +137,7 @@
           <li class="team-list__item">
             <a href=""><img src="./images1/igor.jpg" alt="парень в очках" width="270" height="260"></a>
             <div class="card-name">
-              <h3 class="card-name__pre-text">Ігор Дем'яненко</h3>
+              <h3 class="card-name__pre-text">Игорь Демьяненко</h3>
               <p class="card-name__post-text">Product Designer</p>
               <ul class="soc list">
                 <li class="soc__item">
@@ -173,7 +174,7 @@
           <li class="team-list__item">
             <a href=""><img src="./images1/olga.jpg" alt="блондинка" width="270" height="260"></a>
             <div class="card-name">
-              <h3 class="card-name__pre-text">Ольга Рєпіна</h3>
+              <h3 class="card-name__pre-text">Ольга Репина</h3>
               <p class="card-name__post-text">Frontend Developer</p>
               <ul class="soc list">
                 <li class="soc__item">
@@ -210,7 +211,7 @@
           <li class="team-list__item">
             <a href=""><img src="./images1/nik.jpg" alt="парень в рубахе" width="270" height="260"></a>
             <div class="card-name">
-              <h3 class="card-name__pre-text">Микола Тарасов</h3>
+              <h3 class="card-name__pre-text">Николай Тарасов</h3>
               <p class="card-name__post-text">Marketing</p>
               <ul class="soc list">
                 <li class="soc__item">
@@ -247,7 +248,7 @@
           <li class="team-list__item">
             <a href=""><img src="./images1/mikh.jpg" alt="парень в футболке" width="270" height="260"></a>
             <div class="card-name">
-              <h3 class="card-name__pre-text">Михайло Єрмаков</h3>
+              <h3 class="card-name__pre-text">Михаил Ермаков</h3>
               <p class="card-name__post-text">UI Designer</p>
               <ul class="soc list">
                 <li class="soc__item">
@@ -289,7 +290,7 @@
     
     <section class="clients">
       <div class="container">
-        <h2 class="clients-title">Постійні клієнти</h2>
+        <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
           <li class="clients-list__item">
             <a href="" class="clients-list__link link">
@@ -347,7 +348,7 @@
         <address>
           <ul class="footer-nav">
             <li class="foot-details"><a href="https://goo.gl/maps/botk4UzgwyVzbYNd8" target="_blank"
-                rel="noopener noreferrer" class="footer-address link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                rel="noopener noreferrer" class="footer-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li class="foot-details"><a href="mailto:info@example.com" class="footer-contacts link">info@example.com</a>
             </li>
             <li><a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a></li>
@@ -355,7 +356,7 @@
         </address>
       </div>
       <div class="footer-links">
-        <h3 class="footer-title">приєднуйтесь</h3>
+        <h3 class="footer-title">присоединяйтесь</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="" class="footer-social-link link">
@@ -388,12 +389,12 @@
         </ul>
       </div>
       <form class="form">
-        <p class="form-sign">Підпишіться на розсилку</p>
+        <p class="form-sign">Подпишитесь на рассылку</p>
         <div class="form-wrap">
           <label class="form-label">
             <input class="input-form" type="email" name="email" placeholder="E-mail">
           </label>
-          <button class="form-btn" type="submit">Підписатися
+          <button class="form-btn" type="submit">Подписаться
             <svg class="icon-form" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
@@ -405,9 +406,9 @@
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
       <form class="modal-form">
-        <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
         <div class="form-field">
-          <label class="label-title" for="name">Ім'я</label>
+          <label class="label-title" for="name">Имя</label>
           <span class="modal-form-icon"><input class="label-input" type="text" name="username" id="name">
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
@@ -423,7 +424,7 @@
           </span>
         </div>
         <div class="form-field">
-        <label class="label-title" for="email">Пошта</label>
+        <label class="label-title" for="email">Почта</label>
         <span class="modal-form-icon">
           <input class="label-input" type="email" name="email" id="email">
           <svg class="form-icon" width="18" height="18">
@@ -432,8 +433,8 @@
         </span>
         </div>
         <div class="form-field textarea">
-          <label class="label-title" for="comment">Коментар</label>
-          <textarea class="label-textarea" name="text" id="comment" placeholder="Введіть текст"></textarea>
+          <label class="label-title" for="comment">Комментарий</label>
+          <textarea class="label-textarea" name="text" id="comment" placeholder="Введите текст"></textarea>
         </div>
         <div class="form-field checkbox-field">
           <input class="checkbox-input" type="checkbox" name="privacy" id="privacy">
@@ -443,10 +444,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-          Погоджуюся з розсилкою та приймаю&nbsp;<a class="link-policy" href="">Умови договору</a>
+          Соглашаюсь с рассылкой и принимаю&nbsp;<a class="link-policy" href="">Условия договора</a>
           </label>
         </div>
-        <button class="modal-form-button" type="submit">Відправити</button>
+        <button class="modal-form-button" type="submit">Отправить</button>
       </form>
       <button aria-label="close" type="button" data-modal-close class="modal-close-btn">
         <svg class="modal-icon" width="18" height="18">
@@ -455,41 +456,7 @@
       </button>
     </div>
   </div>
-
-  <!-- Mobile menu -->
-
-  <div class="menu-overlay" data-menu>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-close-icon" width="40" height="40">
-          <use href="./images/icons.svg#menu-close"></use>
-        </svg>
-      </button> -->
-
-      <ul class="mobile-list mobile-menu list">
-        <li class="mobile-item"><a href="" class="mobile-link link">Студія</a></li>
-        <li class="mobile-item"><a href="" class="mobile-link link">Портфоліо</a></li>
-        <li class="mobile-item"><a href="" class="mobile-link link">Контакти</a></li>
-      </ul>
-      <ul class="mobile-contact list">
-        <li class="mobile-contact-item"><a href="" class="mobile-contact-link link">+38 096 111 11 11</a></li>
-        <li class="mobile-contact-item"><a href="" class="mobile-contact-link link">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobile-socials list">
-        <li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Instagram</a></li>
-        <li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Twitter</a></li>
-        <li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Facebook</a></li>
-        <li class="mobile-socials-item"><a href="" class="mobile-socials-link link">LinkedIn</a></li>
-      </ul>
-
-  </div>
-  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script> -->
-
-  <script src="./js/menu.js"></script>
-
   <script src="./js/modal.js"></script>
-
+  
 </body>
 </html>

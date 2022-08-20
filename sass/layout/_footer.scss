@@ -6,36 +6,20 @@
 }
 
 .footer-list {
-    // display: flex;
+    display: flex;
     align-items: baseline;
 }
 
 .logo-foot {
     color: var(--title-text-color);
-    font-family: var(--second-font);
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-bottom: 20px;
     display: block;
-
-    // @media screen and (max-width: 767px) {
-    //     display: block;
-    //     padding-top: 16px;
-    //     padding-bottom: 16px;
-    // }
-
-    // @media screen and (max-width: 1199px) {
-    //     font-size: 24px;
-    //     line-height: 1.16;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     font-size: 26px;
-    //     line-height: 1.19;
-    // }
+    margin-bottom: 20px;
 }
 
 .footer-nav {
@@ -158,9 +142,9 @@
     }
 }
 
-// .form-wrap {
-//     // display: flex;
-// }
+.form-wrap {
+    display: flex;
+}
 
 .form-btn {
     display: flex;
