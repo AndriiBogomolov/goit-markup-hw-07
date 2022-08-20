@@ -1,0 +1,38 @@
+body {
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+    background-color: var(--white-color);
+    color: var(--primery-text-color);
+    letter-spacing: 0.03em;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding-left: 0;
+    display: list-item;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+// .no-scroll {
+//     overflow: hidden;
+// }

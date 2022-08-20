@@ -1,0 +1,48 @@
+.main-nav .nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__studio,
+.nav__portfolio,
+.nav__contact {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+    }
+}
+
+.nav__portfolio,
+.nav__contact {
+    color: var(--accent-color);
+}
+
+.current {
+    position: relative;
+    color: var(--title-text-color);
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: var(--title-text-color);
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    right: 0;
+
+    
+}

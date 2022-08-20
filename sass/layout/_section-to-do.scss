@@ -1,0 +1,56 @@
+.to-do-section {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.to-do {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.to-do-section {
+    padding-bottom: var(--next-typical-gap);
+}
+
+.our-work {
+    display: flex;
+    margin-left: -30px;
+}
+
+.to-do__item {
+    flex-basis: calc(100% / 3 - var(--typical-gap));
+    margin-left: var(--typical-gap);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumb-to-do {
+    position: relative;
+}
+
+.to-do-item__text {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}

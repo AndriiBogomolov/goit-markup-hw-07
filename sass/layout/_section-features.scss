@@ -1,0 +1,131 @@
+.section-features {
+
+    // Mobile screen first
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+    align-items: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        padding-top: var(--next-typical-gap);
+        padding-bottom: var(--next-typical-gap);
+    }
+}
+
+
+.features {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        :nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        :nth-child(2n) {
+            margin-right: 30px;
+        }
+    }
+}
+
+
+.feature__icon {
+    display: flex;
+}
+
+
+.feature__item {
+    margin-right: var(--typical-gap);
+}
+
+.feature__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.feature__item:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.thumb {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    width: 450px;
+    height: 120px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.feature__benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    left: 105px;
+    top: 670px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        left: 15px;
+        top: 690px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        left: 215px;
+        top: 924px;
+    }
+}
+
+.feature__text {
+    max-width: 450px;
+    height: 50px;
+    left: 15px;
+    top: 696px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        height: 48px;
+        left: 15px;
+        top: 716px;
+        // &:nth-child(3n) {
+        //     margin-bottom: 0;
+        // }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        height: 72px;
+        left: 215px;
+        top: 950px;
+        margin-bottom: 0;
+    }
+}
